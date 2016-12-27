@@ -10,7 +10,8 @@
   },
   "main": "index.js",
   "keywords": [
-    "runkit npm",
+    "runkit",
+    "demo",
     "trailpack",
     "trails",
     "trailjs"
@@ -22,7 +23,7 @@
     "lodash": "^4.11.1",
     "trails": "latest",
     "eslint": "^2.4",
-    "eslint-config-trails": "^1.0.4",
+    "eslint-config-trails": "^2",
     "mocha": "^2.4.5",
     "smokesignals": "^1.0.9",
     "trailpack-core": "^1.0.0-beta-6"
