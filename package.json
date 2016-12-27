@@ -20,15 +20,15 @@
     "trailpack": "latest"
   },
   "devDependencies": {
-    "lodash": "^4.11.1",
-    "trails": "latest",
     "eslint": "^3.12",
     "eslint-config-trails": "^2",
+    "lodash": "^4.11.1",
     "mocha": "^3.2",
-    "smokesignals": "^2"
+    "smokesignals": "^2",
+    "trails": "latest"
   },
   "scripts": {
-    "test": "eslint . && mocha"
+    "test": "eslint ."
   },
   "engines": {
     "node": ">= 4.0.0"
