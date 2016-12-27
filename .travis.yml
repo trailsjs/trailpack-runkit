@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 7
+
+deploy:
+  provider: npm
+  email: hello@trailsjs.io
+  api_key:
+    secure: cuJRdvnqQypwQo2LTmschDuK7KSqCZsD4WfdAKM1horNfYCVJhfSKOMSygth1ETMh4N0TgcEzbGFEfaKfTos7G2zXQlZU9hNWb1bvomBXz4EieRzhG7tGi+6smrZ4XUzmLgjxCw1vqdhqv5LLXNXjakyDORN4HQAwFj+BoX+mSo0GIcEgSNyhefUCaeu6vTD3EWwUX6KUW/qPRb+E4umWxrJOf9uk74lANCsUjJd/Cwl5UD1LyKC2954JRPdQ/Y3rQkSWdIvKaBlKZrS2w3vGtHDDbZU0tuOKWXOL1wx36Rf4LO7ej9b1jEi3enIKCqUf5xDrUdh68A9mV4KBUrtPzUw8UFUCTg+WMWpQdHvoP5ros82aQqi8sBrUr+8PWISbGAHKYDcJIB0mmsFGIQlVSHsJ2TTBhwBAqHuSlkHE+JDdT9A8RFxBiGink81k7KstShzd4nt3WAEcC2t2ufOh+kLRRNBBGUiPk58c/gQxtCY3q5u866rAZAi9YVCEtlzxIWAJxI0E5TmA0fYcR2Ne9bOZfOXUR9ueR4QMB21IsJDHMFA5nfXL/zlumUsxrCmrKTjej2Gl4IIKZrIJHqutU/rJ3AJEvOr8QgYz/EwuWxk1wT07b7FE7eUdTl4aRlLmdO5ay4fq2aTdO9I6FbYwUEj9a5ZOxB85JIJzG95iiM=
+  on:
+    tags: true
+    repo: trailsjs/trailpack-runkit
+    node: 7
