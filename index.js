@@ -19,8 +19,9 @@ module.exports = class RunkitTrailpack extends Trailpack {
    */
   initialize () {
     const RunkitController = this.app.controllers.RunkitController
+    const context = this.app.config.runkit.context
 
-    this.app.endpoint = function (request, response) {
+    context.endpoint = function (request, response) {
       response.end(RunkitController.runkitEndpoint(request))
     }
 
