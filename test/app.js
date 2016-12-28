@@ -9,16 +9,23 @@ module.exports = _.defaultsDeep({
   },
   api: {
     models: { },
-    controllers: { },
+    controllers: {
+      RunkitController: class RunkitController {
+        runkitEndpoint (request) {
+
+        }
+      }
+    },
     services: { }
   },
   config: {
     main: {
       packs: [
-        smokesignals.Trailpack,
-        require('trailpack-core'),
         require('../')
       ]
+    },
+    runkit: {
+      context: { }
     }
   }
 }, smokesignals.FailsafeConfig)
