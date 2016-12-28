@@ -5,9 +5,6 @@ const Trailpack = require('trailpack')
 
 module.exports = class RunkitTrailpack extends Trailpack {
 
-  /**
-   * TODO document method
-   */
   validate () {
     if (!this.app.config.runkit.context) {
       throw new ConfigValueError('config.runkit.context must be properly set')
@@ -24,12 +21,6 @@ module.exports = class RunkitTrailpack extends Trailpack {
     context.endpoint = function (request, response) {
       response.end(RunkitController.runkitEndpoint(request))
     }
-
-    /*
-    return runkitEndpoint(this.app.config.runkit.context, (req, done) => {
-      done(RunkitController.runkitEndpoint(req))
-    })
-    */
   }
 
   constructor (app) {
